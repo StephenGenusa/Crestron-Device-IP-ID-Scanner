@@ -136,12 +136,13 @@ def test_ipid(sock, ipid, num_retries):
                     #    serial_send(sock, join_num, "\xFA\x91\xCA")
 
                     # Now set all the analog joins in the program to 65535/100%
+                    #for join_num in range(1, 65353):
+                    #    analog_send(sock, join_num, 65535)
+                    
+                    # Now pulse all digital joins high
                     #for join_num in range(1, 65535):
                     #    digital_send(sock, join_num, 1)
 
-                    # Now pulse all digital joins high
-                    #for join_num in range(1, 65353):
-                    #    analog_send(sock, join_num, 65535)
                 return # success so return
         except Exception, e:
             print ("The exception was: %s" % e)
