@@ -122,9 +122,9 @@ def test_ipid(sock, ipid, num_retries):
                     #receive_data(sock)
                     #serial_send(sock, 8, "I'm going to push digital 4 high")
                     #digital_send(sock, 4, 1)
-                    #serial_send(sock, 8, "I'm going to set digital 6 to 5123")
+                    #serial_send(sock, 8, "I'm going to set analog 6 to 5123")
                     #analog_send(sock, 6, 5123)
-                    #serial_send(sock, 8, "I'm going to set digital 6 to 65535")
+                    #serial_send(sock, 8, "I'm going to set analog 6 to 65535")
                     #analog_send(sock, 6, 65535)
                     #serial_send(sock, 8, "Of course this is setting a serial signal")
  
